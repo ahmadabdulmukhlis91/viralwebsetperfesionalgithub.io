@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="style.css/* style.css */
+
+/* Body & background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Judul */
+h1 {
+    font-size: 3em;
+    color: #ffdd00;
+    margin-bottom: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+h2 {
+    font-size: 2em;
+    color: #00ffcc;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {text-shadow: 0 0 5px #ffdd00, 0 0 10px #ffdd00;}
+    to {text-shadow: 0 0 25px #ffdd00, 0 0 50px #ffdd00;}
+}
+
+/* Paket */
+.packages {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.package {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #ffdd00;
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0 0 20px #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #ffdd00;
+}
+
+.package h3 {
+    color: #ffdd00;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.package ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.package ul li {
+    margin-bottom: 10px;
+}
+
+/* WhatsApp Button */
+.whatsapp a {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    box-shadow: 0 0 20px #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 35px #25D366;
+}
+
+.whatsapp img {
+    width: 35px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
